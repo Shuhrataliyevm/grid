@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "left-top main right-top"
+        "left-bottom main right-bottom"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    gap: 10px;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Define the areas and styles */
+.header {
+    grid-area: header;
+    background-color: #73c6b6;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.left-top {
+    grid-area: left-top;
+    background-color: #5dade2;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.left-bottom {
+    grid-area: left-bottom;
+    background-color: #5dade2;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #a569bd;
+    height: 420px;
+    border-radius: 5px;
+}
+
+.right-top {
+    grid-area: right-top;
+    background-color: #e74c3c;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.right-bottom {
+    grid-area: right-bottom;
+    background-color: #e74c3c;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #f5b041;
+    height: 60px;
+    border-radius: 5px;
+}

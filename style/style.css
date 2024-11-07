@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/5d\ picture.jpg);
+    background-size: cover; /* Fonni to'liq qoplash */
+    background-repeat: no-repeat; /* Takrorlanishni o'chirish */
+    background-position: center center; /* Fonni markazga joylash */
+    height: 100vh; /* Saytning balandligini butun oynaga tenglashtirish */
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.inter button{
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.568);    
+}
+
+.inter{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0 auto;
+    position: absolute;
+    top: 290px;
+    left: 570px;
+}
